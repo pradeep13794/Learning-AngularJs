@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <!-- <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+    <script src="node_modules\jquery\dist\jquery.js" charset="utf-8"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.js" charset="utf-8"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="node_modules\angular\angular.js" charset="utf-8"></script>
+    <script src="node_modules\angular-route\angular-route.js" charset="utf-8"></script>
+    <script src="app.module.js" charset="utf-8"></script>
+    <script src="app.config.js" charset="utf-8"></script>
+    <script src="MenuBar\navbar.module.js" charset="utf-8"></script>
+    <script src="MenuBar\navbar.controller.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="demoApp" ng-controller="navbar">
+    <nav class="navbar">
+      <ul class="nav">
+        <li ng-click="toggleNav()">
+          <i ng-class="canDisplay?'fa fa-arrow-left':'fa fa-bars'"></i>
+        </li>
+        <li>Demo Inc.</li>
+      </ul>
+      <div class="options"><span>&#8942;</span></div>
+      <div class="user">
+        <ul id="user">
+          <li>
+            <input type="text" class="search-input" placeholder="search"/>
+          </li>
+          <li>Login</li>
+          <li>Signup</li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="sidebar" id="nav" ng-class="canDisplay?'sidebarShow':'sidebarHide'">
+      <div class="menu-item">
+        <a>
+          Home
+          <div class="icon">
+            <span class="glyphicon glyphicon-menu-right"></span>
+          </div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a>Options</a>
+      </div>
+    </div>
+    <div ng-view class="body">
+
+    </div>
+  </body>
+</html>
