@@ -127,7 +127,13 @@ div.options{
 }
 .box{
   flex: 1 200px;
-  margin: 10px;
+  margin:5px;
   padding:10px;
   border: 1px solid #000;
+  text-align: center;
+  height: 200px;
+  color: #fff;
+}
+h1{
+  background-color: #bdbdbd;
 }
