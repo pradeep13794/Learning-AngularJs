@@ -65,8 +65,12 @@ ul{
   width: 100%;
   background-color: #3b68af;
   min-height: 50px;
-  margin: auto 0;
+  margin: 0;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 .nav{
   list-style: none;
@@ -74,17 +78,7 @@ ul{
   padding : 5px;
   font-size: 20px;
 }
-.nav >li{
-  display: inline-block;
-  margin: 0 10px;
-  padding:  10px;
-  cursor: pointer;
-  color: #f1f1f1;
-  vertical-align: middle;
-}
-.nav >li:hover{
-  color: #6b6c6d;
-}
+
 div.options{
   position: absolute;
   cursor: pointer;
@@ -93,30 +87,6 @@ div.options{
   font-size: 32px;
   color: #f1f1f1;
   transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.user{
-  display: inline-block;
-  position: absolute;
-  top: 30px;
-  right: 50px;
-}
-.user ul{
-  margin: 0;
-  padding: 0;
-}
-#user li{
-  display: inline-block;
-  padding: 0 10px;
-  color: #f1f1f1;
-  cursor: pointer;
-}
-.search-input{
-  border: 0;
-  height: 15px;
-  width: 150px;
-  outline: none;
-  padding: 5px;
-  border-radius: 5px;
 }
 .container{
   margin: 20px;

@@ -19,23 +19,13 @@
   </head>
   <body ng-app="demoApp" ng-controller="navbar">
     <nav class="navbar">
-      <ul class="nav">
-        <li ng-click="toggleNav()">
-          <i ng-class="canDisplay?'fa fa-arrow-left':'fa fa-bars'"></i>
-        </li>
-        <li>Demo Inc.</li>
-      </ul>
-      <div class="options"><span>&#8942;</span></div>
-      <div class="user">
-        <ul id="user">
-          <li>
-            <input type="text" class="search-input" placeholder="search"/>
-          </li>
-          <li>Login</li>
-          <li>Signup</li>
-        </ul>
+      <div class="menu-icon">
+        <i ng-click="toggleNav()" ng-class="canDisplay?'fa fa-arrow-left':'fa fa-bars'"></i>
       </div>
-
+      <div class="banner">
+        <h2>Demo Inc.</h2>
+      </div>
+      <div class="options"><span>&#8942;</span></div>
     </nav>
     <div class="sidebar" id="nav" ng-class="canDisplay?'sidebarShow':'sidebarHide'">
       <div class="menu-item">
