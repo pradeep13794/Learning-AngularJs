@@ -69,24 +69,39 @@ ul{
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  align-content: space-between;
   flex-flow: row wrap;
 }
-.nav{
-  list-style: none;
-  margin: 0 auto;
-  padding : 5px;
-  font-size: 20px;
-}
-
-div.options{
-  position: absolute;
+.menu-icon{
+  flex: 1;
+  order: -1;
+  font-size: 2em;
+  color: #f1f1f1;
   cursor: pointer;
-  right: 30px;
-  top: 20px;
+  margin: 5px;
+  align-self: center;
+}
+.banner{
+  flex: 5;
+  order:0;
+  color: #f1f1f1;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  align-self: baseline;
+}
+.options{
+  cursor: pointer;
+  flex: 1;
+  align-self: center;
   font-size: 32px;
   color: #f1f1f1;
   transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  padding: 10px 0px 10px 30px;
+}
+.options span{
+  display: flex;
+  align-self:self-end;
 }
 .container{
   margin: 20px;
