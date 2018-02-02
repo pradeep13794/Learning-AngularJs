@@ -19,10 +19,11 @@ a{
   height:100% ;
   width:0;
   background-color:#4f5b66;
-  display: inline-block;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   margin: 0;
   overflow-x: hidden;
-  position: fixed;
   transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 .sidebarHide{
@@ -30,15 +31,18 @@ a{
 }
 .sidebarShow{
   width: 10%;
+  min-width: 120px;
 }
 .menu-item{
-  align-items: left;
   padding:10px;
+  align-self: center;
   margin: 0;
+  flex-grow: 1 0 120px;
   width: 100%;
-  display: inline-block;
-  font-size: 17px;
-  vertical-align: middle;
+  font-size: 1.2em;
+}
+.menu-item:nth-of-type(1){
+  margin-top: 30px;
 }
 .menu-item > a{
   margin: 0 0 0 20px;
@@ -75,7 +79,7 @@ a{
   margin-left: 10px;
   justify-content: flex-start;
 }
-.banner{-
+.banner{
   letter-spacing: 2px;
   font-size: 1.5em;
   flex-grow: 5;
