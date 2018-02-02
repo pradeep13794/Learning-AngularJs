@@ -14,9 +14,6 @@ a{
   color: #000;
   cursor: pointer;
 }
-ul{
-  list-style-type: none;
-}
 .sidebar{
   min-height: 100% !important;
   height:100% ;
@@ -54,22 +51,14 @@ ul{
 .menu-item > a:hover{
   color: #454747;
 }
-.icon{
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-left: 10px;
-  color: #fff;
-}
 .navbar{
   width: 100%;
   background-color: #3b68af;
   min-height: 50px;
   margin: 0;
-  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
 .nav-item{
@@ -78,25 +67,27 @@ ul{
   cursor: pointer;
   flex-grow: 1;
   flex-shrink: 0;
-  border: 1px solid black;
 }
 .menu-icon{
   max-width: 35px;
   padding: 5px;
-  flex-basis: 10px;
   font-size: 2em;
-  margin: 5px;
-  align-self: center;
+  margin-left: 10px;
+  justify-content: flex-start;
 }
-.banner{
-  flex-basis: : 900px;
+.banner{-
   letter-spacing: 2px;
   font-size: 1.5em;
+  flex-grow: 5;
+  justify-content: center;
+  cursor: default;
 }
 .options{
-  flex-basis: 100px;
   align-self: center;
   font-size: 32px;
+  padding: 10px;
+  margin-right: 10px;
+  justify-content: flex-end;
   //transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .options span{
